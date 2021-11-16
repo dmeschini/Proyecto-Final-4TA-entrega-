@@ -1,0 +1,372 @@
+.estilolinks {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4de6eb;
+  padding: 1rem;
+  border-style: double;
+}
+
+.ajustefondos {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  border-style: solid;
+  border-radius: 1%;
+  border-color: #719ab6;
+}
+
+.descripciones {
+  font-style: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 80%;
+}
+
+@-webkit-keyframes colores {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes colores {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.coloreado {
+  -webkit-animation-name: colores;
+          animation-name: colores;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  font-family: Teko, Geneva, Tahoma, sans-serif;
+}
+
+/* AJUSTES GENERALES: FIN /////////////////////////////////////////////////////////////////////////////////*/
+/*PAGINA DE INICIO: INICIO /////////////////////////////////////////////////////////////////////////////////*/
+.grillahome {
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  -ms-grid-columns: 23% 23% 23% 23%;
+      grid-template-columns: 23% 23% 23% 23%;
+  -ms-grid-rows: 20rem 10rem 10rem 20rem;
+      grid-template-rows: 20rem 10rem 10rem 20rem;
+      grid-template-areas: "marca marca marca marca" "productos productos servicios servicios" "productos productos servicios servicios"         "ofertas ofertas servicios servicios";
+}
+
+.estilomarca {
+  font-style: italic;
+  background-image: url(./img/fondomarca3.jpg);
+  color: #0e8abb;
+  font-size: 300%;
+  font-family: Chonburi, Verdana, Geneva, Tahoma, sans-serif;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: marca;
+}
+
+.estilofertas {
+  background-image: url(./img/fondomarca2.jpg);
+  font-size: 200%;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: ofertas;
+  border-style: none;
+}
+
+.estilofertas:hover {
+  border-color: chartreuse;
+}
+
+.estiloproductoshome {
+  background-image: url(./img/productos.jpg);
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: productos;
+}
+
+.estiloproductoshome:hover {
+  border-color: chartreuse;
+}
+
+.estiloservicioshome {
+  background-image: url(./img/servicios.jpg);
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: servicios;
+}
+
+.estiloservicioshome:hover {
+  border-color: chartreuse;
+}
+
+.carousel .item {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.grillaproductos {
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  -ms-grid-columns: 30% 30% 30;
+      grid-template-columns: 30% 30% 30;
+  -ms-grid-rows: 50%;
+      grid-template-rows: 50%;
+      grid-template-areas: "computadoras redes perifericos";
+}
+
+.estiloproductos {
+  font-size: 200%;
+  text-align: center;
+  color: #00b7ff;
+}
+
+.estilocomputadoras {
+  background-image: url(./img/computadoras.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: computadoras;
+}
+
+.estiloredes {
+  background-image: url(./img/redes.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: redes;
+}
+
+.estiloperifericos {
+  background-image: url(./img/perifericos.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: perifericos;
+}
+
+.marcoslistas {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
+  padding: 2rem;
+  caption-side: top;
+  color: #0f7206;
+  text-align: center;
+  line-height: 2rem;
+  -webkit-column-gap: inherit;
+          column-gap: inherit;
+  width: 50%;
+}
+
+.grillaservicios {
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  -ms-grid-columns: 50% 49%;
+      grid-template-columns: 50% 49%;
+  -ms-grid-rows: 50%;
+      grid-template-rows: 50%;
+      grid-template-areas: "servtecnico consultoria";
+}
+
+.estiloservicios {
+  font-size: 200%;
+  text-align: center;
+  color: #00b7ff;
+}
+
+.estiloserviciotecnico {
+  background-image: url(./img/serviciotecnico.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: servtecnico;
+}
+
+.estiloconsultoria {
+  background-image: url(./img/consultoria.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: consultoria;
+}
+
+.estilotienda {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 200%;
+  color: #0b690b;
+  text-align: center;
+}
+
+.grillatienda {
+  display: -ms-grid;
+  display: grid;
+  padding: 1rem;
+  grid-gap: 1rem;
+  -ms-grid-columns: 32% 32% 32%;
+      grid-template-columns: 32% 32% 32%;
+  -ms-grid-rows: 10rem 10rem 10rem 10rem;
+      grid-template-rows: 10rem 10rem 10rem 10rem;
+      grid-template-areas: "oferta1 oferta2 oferta3" "oferta4 oferta5 oferta6" "oferta7 oferta8 oferta9 " "oferta10 oferta11 oferta12";
+}
+
+.oferta1 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: oferta1;
+  background-size: cover;
+}
+
+.oferta2 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: oferta2;
+  background-size: cover;
+}
+
+.oferta3 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: oferta3;
+  background-size: cover;
+}
+
+.oferta4 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: oferta4;
+  background-size: cover;
+}
+
+.oferta5 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: oferta5;
+  background-size: cover;
+}
+
+.oferta6 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: oferta6;
+  background-size: cover;
+}
+
+.oferta7 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: oferta7;
+  background-size: cover;
+}
+
+.oferta8 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: oferta8;
+  background-size: cover;
+}
+
+.oferta9 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: oferta9;
+  background-size: cover;
+}
+
+.oferta10 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: oferta10;
+  background-size: cover;
+}
+
+.oferta11 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: oferta11;
+  background-size: cover;
+}
+
+.oferta12 {
+  background-image: url(./img/ofertapc.jpg);
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: oferta12;
+  background-size: cover;
+}
+
+.estiloacercade {
+  background-image: url(./img/acercade.jpg);
+  font-size: 220%;
+  color: #55dbdb;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 26rem;
+  text-align: center;
+}
+
+.estilomapa {
+  font-size: 220%;
+  color: #8455db;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 5%;
+}
+
+ul {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* AJUSTES GENERALES: INICIO ///////////////////////////////////////////////////////////////////////////*/
+* {
+  Margin: 0;
+  padding: 0;
+}
+
+.fondo {
+  background-image: url(./img/cielo.jpg);
+  background-size: cover;
+}
+/*# sourceMappingURL=style.css.map */

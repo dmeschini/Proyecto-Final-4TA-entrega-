@@ -1,0 +1,83 @@
+
+.estilotienda{          
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:200%;
+    color: rgb(11, 105, 11);    
+    text-align: center;
+}
+
+.grillatienda{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;    
+    grid-template-columns: 32% 32% 32% ;
+    grid-template-rows: 10rem 10rem 10rem 10rem ;
+    grid-template-areas:
+    "oferta1 oferta2 oferta3"
+    "oferta4 oferta5 oferta6"
+    "oferta7 oferta8 oferta9 "
+    "oferta10 oferta11 oferta12"
+    ;
+}
+
+.oferta1{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta1;
+    background-size:cover;
+}
+
+.oferta2{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta2;
+    background-size: cover;
+}
+.oferta3{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta3;
+    background-size: cover;
+}
+.oferta4{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta4;
+    background-size: cover;
+}
+.oferta5{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta5;
+    background-size: cover;
+}
+.oferta6{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta6;
+    background-size: cover;
+}
+.oferta7{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta7;
+    background-size: cover;
+}
+.oferta8{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta8;
+    background-size: cover;
+}
+.oferta9{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta9;
+    background-size: cover;
+}
+.oferta10{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta10;
+    background-size: cover;
+}
+.oferta11{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta11;
+    background-size: cover;
+}
+.oferta12{
+    background-image: url(./img/ofertapc.jpg);
+    grid-area: oferta12;
+    background-size: cover;
+}

@@ -1,0 +1,96 @@
+.estilolinks {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77, 230, 235);
+    padding: 1rem;
+    border-style: double;
+}
+
+.ajustefondos{
+    background-size: cover;
+    background-position: center; 
+    text-align:center;  
+    border-style:solid;
+    border-radius: 1%;
+    border-color:rgb(113, 154, 182)   
+ }
+ 
+
+.descripciones{
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+}
+
+@keyframes colores{
+    0%{color: red}
+    50%{color:green}
+    75%{color:yellow}
+    100%{color: red}
+}
+
+.coloreado{
+   animation-name: colores;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+   animation-duration: 6s;
+   animation-delay: 1s;
+   font-family: Teko, Geneva, Tahoma, sans-serif;
+}
+ /* AJUSTES GENERALES: FIN /////////////////////////////////////////////////////////////////////////////////*/
+
+/*PAGINA DE INICIO: INICIO /////////////////////////////////////////////////////////////////////////////////*/
+
+.grillahome{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 20rem 10rem 10rem 20rem  ;
+    grid-template-areas:        
+    "marca marca marca marca"
+    "productos productos servicios servicios"
+    "productos productos servicios servicios"        
+    "ofertas ofertas servicios servicios" ;   
+}
+.estilomarca {
+    font-style:italic;    
+    background-image: url(./img/fondomarca3.jpg);        
+    color: rgb(14, 138, 187);      
+    font-size: 300%;
+    font-family: Chonburi, Verdana, Geneva, Tahoma, sans-serif;   
+    grid-area: marca;           
+}
+
+.estilofertas{    
+    background-image: url(./img/fondomarca2.jpg);            
+    font-size: 200%;    
+    grid-area: ofertas; 
+    border-style: none;   
+}
+
+.estilofertas:hover{
+    border-color: chartreuse;
+}
+
+.estiloproductoshome{    
+    background-image: url(./img/productos.jpg);    
+    grid-area: productos;   
+}
+
+.estiloproductoshome:hover{
+    border-color: chartreuse;
+}
+
+.estiloservicioshome{    
+    background-image: url(./img/servicios.jpg);       
+    grid-area: servicios;   
+}
+
+.estiloservicioshome:hover{
+    border-color: chartreuse;}
+
+    .carousel .item {
+        height:max-content;
+      }
+    
+    
+   
